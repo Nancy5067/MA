@@ -1,0 +1,8 @@
+Step 1 - Create a repository
+1. Log in to GitHub and begin the process to create a new repository.
+2. Enter a name for your repository (for example, hello-world).
+3. Select the option to initialize the repository with a README file.
+4. Finally, click Create repository.
+5. There is no need to add any source code for now
+6. Login to Circle CI https://app.circleci.com/ Using GitHub Login, Once 
+logged in navigate to Projects
