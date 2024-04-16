@@ -22,4 +22,23 @@ d) To get the details of our volume we have to write below command:
 docker volume inspect myvol1
 Here you can see all the details of our myvol1 i.e. name, created time, driver, mountpoint. Our volume is located at the path mentioned in Mountpoint section
 
-e) To remove your volume you can write below command: docker volume rm myvol1 To remove all unused volumes we can write below command docker volume prune These are the basic functionalities of docker volume. You can explore more functionalit Working with docker network explained below: To write this command below is the syntax: docker network COMMAND docker network connect docker network create a) To Connect a container to a network b) To create a network we have to write below command: → c) To disconnect a container from a network docker network disconnect d) To display detailed information on one or more networks docker network inspect e) To list the network: docker network Is f) To remove all unused networks → docker network prune g) To remove one or more networks docker network rm
+e) To remove your volume you can write below command: 
+docker volume rm myvol1 
+To remove all unused volumes we can write below command 
+docker volume prune 
+These are the basic functionalities of docker volume. 
+You can explore more functionalit Working with docker network explained below: 
+To write this command below is the syntax: docker network COMMAND docker network connect docker network create 
+a) To Connect a container to a network
+docker network connect
+b) To create a network we have to write below command: 
+→ docker network create
+c) To disconnect a container from a network 
+docker network disconnect 
+d) To display detailed information on one or more networks 
+docker network inspect 
+e) To list the network: docker network ls 
+f) To remove all unused networks 
+→ docker network prune 
+g) To remove one or more networks 
+docker network rm
