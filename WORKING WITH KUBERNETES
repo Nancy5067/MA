@@ -1,1 +1,8 @@
+Step-1: Add a new instance to your setup, then proceed to create a master node and establish a cluster using the following commands:
+kubectl apply -f https://raw.githubusercontent.com/cloudnativelabs/kube- router/master/daemonset/kubeadm-kuberouter.yaml
+You have the option to generate a worker node by executing the command provided by the master node on a separate instance. 
 
+Basic Commands: 
+Execute "kubectl get nodes" to inspect the available nodes in the cluster.
+Run "kubectl get pods" to observe the list of running pods.
+Utilize "kubectl get services" to examine the available services within the cluster
