@@ -1,0 +1,38 @@
+Step 1: Enter the following Commands.
+a) docker pull nginx nginx: nginx is the image which is already available in docker
+b) docker run -it-name-webapp -d -p 80:80 nginx: Create a webapp and run it with nginx image on port 80
+Step 2: Click on Port and enter 80 in the dropdown window and click OK.
+Output: The below webpage will be visible
+Step 3: Enter the below command to enter bash shell and then open port 80.
+docker exec -it WebApp bash
+cd/usr/share/nginx/html
+echo "Hello Welcome to updated nginx Page."> index.html
+exit
+Step 4: List all the running containers: docker ps
+Step 5: Create another container in Docker: webappl
+docker run -it-name webappl -d -p 80:80 nginx
+Step 6: Click on port and enter 80 in the dropdown and click ok.
+Output: the welcome page of nginx should be visible
+Step 7: Creation of Volume(MyVolume)
+Command:
+a)	docker volume create MyVolume
+b) docker volume inspect MyVolume
+d) docker stop WebAppl
+ 
+Step 8: Create a container (WebApp 2 ) inside the container MyVolume
+docker run -d-name = WebApp2-mount source-MyVolume,destination=/usr/share/nginx/html -p 80:80 nginx
+
+Step 9: Enter the below commands:
+a)	cd /var/lib/docker
+b) ls
+c) cd volumes
+d) ls
+
+Step 10:Edit the index file with the below content to "Display the content on the Webpage."
+ 
+Open Port 80
+Step 11: Stop the above container (WebApp2) and Create another container within the volume (MyVolume)
+Open port 80
+Output: The edits made in one container of the volume will be reflected in all the containers of that volume
+
+
