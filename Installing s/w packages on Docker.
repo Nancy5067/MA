@@ -1,0 +1,9 @@
+Step-1: Creating Container 
+Command: docker pull ubuntu
+
+Step-2: Let's initiate an Ubuntu session by accessing the terminal from the command prompt using the following command: "docker run -it ubuntu"
+•	For vim
+Command: apt-get install vim
+Step-4: Run the installed software.
+Command: vim
+
