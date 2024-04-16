@@ -1,3 +1,18 @@
+
+Pre-Requisites: 
+1. Open Windows Firewall 
+Click on Advanced Security
+Click on Inbound Rules 
+Create a New Rule 
+Which type of rule would you like to create → port 
+Does this rule apply the local ports or specific local ports 
+Select Specific local ports - 80 
+What action should be taken when a connection matches the specified conditions? 
+Allow the connection 
+e. f. When does this apply? - Domain, Private, Public 
+Name: ReportServer
+Description: ReportServer
+
 Step 1: Enter the following Commands.
 a) docker pull nginx nginx: nginx is the image which is already available in docker
 b) docker run -it-name-webapp -d -p 80:80 nginx: Create a webapp and run it with nginx image on port 80
