@@ -28,10 +28,12 @@ b) ls
 c) cd volumes
 d) ls
 
-Step 10:Edit the index file with the below content to "Display the content on the Webpage."
- 
+Step 10:Edit the index file with the below content to "Display the content on the Webpage"
+$ echo "From MyVolume HelloKB" > index.html
 Open Port 80
 Step 11: Stop the above container (WebApp2) and Create another container within the volume (MyVolume)
+$ docker stop WebApp2
+$ docker run -d --name-WebApp3 -mount source-MyVolume, destination=/usr/share/nginx/html-p 80:80 nginx
 Open port 80
 Output: The edits made in one container of the volume will be reflected in all the containers of that volume
 
